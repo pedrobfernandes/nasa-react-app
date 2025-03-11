@@ -55,8 +55,8 @@ export default function App()
     return (
         <>
             {data ? (<Main data={data}/>) :
-                <div className="loadingState">
-                    <i className="fa-solid fa-gear"></i>
+                <div className="loadingState" aria-live="polite" aria-label="Loading today's astronomical image and its description...">
+                    <i className="fa-solid fa-gear" aria-hidden="true"></i>
                 </div>}
             {showModal && (<SideBar data={data} handleToggleModal={handleToggleModal}/>)}
             {data && (<Footer data={data} handleToggleModal={handleToggleModal}/>)}
