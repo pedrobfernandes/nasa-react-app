@@ -11,7 +11,7 @@ export default function SideBar(props)
                     <p className="destiptionTitle">{data?.date}</p>
                     <p>{data?.explanation}</p>
                 </div>
-                <button onClick={handleToggleModal} aria-label={`Click to get information on ${data.title.substring(data.title.indexOf(":") + 2)}`}>
+                <button onClick={handleToggleModal} aria-label={`Click to close the sidebar`}>
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
